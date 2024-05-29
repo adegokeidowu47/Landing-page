@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="https://fontawesome.com/icons"/>
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   <title>Dev Challenge</title>
 </head>
 <body>
@@ -17,16 +20,16 @@
       <header>
         <nav>
            <div class="logo"><img src="logo.png" alt="company-logo" id="logo-img"></div>
-          <ul>
-             <li class="about">Home</li>
-             <li class="about">Services</li>
-             <li class="about">Pages</li>
-             <li class="about">Case shop</li>
-             <li class="about">Blog</li>
-             <li class="about">content</li>
+          <ul id="showLi">
+             <li class="about"><a href="#">Home</a></li>
+             <li class="about"><a href="#">Services</a></li>
+             <li class="about"><a href="#">Pages</a></li>
+             <li class="about"><a href="#">Case shop</a></li>
+             <li class="about"><a href="#">Blog</a></li>
+             <li class="about"><a href="#">content</a></li>
           </ul>
           <div class="search">
-            <P><img src="needHelp.png" alt="pics" width="50px" height="aut0"></P>
+            <div id="need-help"><img src="needHelp.png" alt="pics" width="50px" height="aut0" ></div>
           </div>
         </nav>
         <div class="welcome-page">
@@ -103,7 +106,7 @@
                 </div>
               </div>
               <div id="need-help">
-                <div id="help-icon">c</div>
+                <i class="fa-solid fa-square-phone"></i>
                 <div id="help-call">
                   <p>Have any questions? Give us a call</p>
                   <p><b>+92 666 888 0000</b></p>
@@ -239,7 +242,7 @@
       <section class="section-eight">
         <div class="text-cont">
           <div class="rate-sec">
-            <div class="mark-out"><i class="fa fa-m"></i></div>
+            <div class="mark-out" id="mark-out-1"><i class="fa fa-m"></i></div>
               <div class="mark-out-text">
                 <h2>Highest Section Rates</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid tempore pariatur, a atque, libero, tenetur ratione eum ducimus laborum voluptatum animi qui omnis. Inventore eaque, iure quisquam tempore cumque.</p>
@@ -268,45 +271,52 @@
       </section>
       </div>
       <footer>
-        <div class="more-about">
-          <h2>Creative Logo</h2>
-          <p>welcome to our Consultancy agency. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <hr />
-          <ul>
-            <li><i class="fa-solid fa-square-phone"></i> <span>+92 555 666 9090</span></li>
-            <li><i class="fa-solid fa-envelope"></i><span>needhelp@gmail.com</span></li>
-            <li><i class="fa-solid fa-location-dot"></i><span>66 Bronkyl Street Newyork, USA </span></li>
-          </ul>
-        </div>
-        <div class="explore">
-          <h2>Explore</h2>
-          <ul>
-            <div class="lists-1">
-              <li>Lastest News</li>
-              <li>Terms of Use</li>
-              <li>Privacy and Policy</li>
-              <li>Contact</li>
-              <li>Help</li>
-            </div>
-            <div class="lists-2">
-              <li>About</li>
-              <li>Support</li>
-              <li>Meet our Team</li>
-              <li>Case Studies</li>
-            </div>
-          </ul>
-        </div>
-        <div class="newsletter">
-          <h2>Newsletter</h2>
-          <div class="subcribe">
-            <p>Subcribe for Lastest articles and resources</p>
-            <div class="input-search">
-              <input type="search">
-              <p>Register</p>
+        <section id="footer1">
+          <div class="more-about">
+            <h2>Creative Logo</h2>
+            <p>welcome to our Consultancy agency. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <hr />
+            <ul>
+              <li><i class="fa-solid fa-square-phone"></i> <span>+92 555 666 9090</span></li>
+              <li><i class="fa-solid fa-envelope"></i><span>needhelp@gmail.com</span></li>
+              <li><i class="fa-solid fa-location-dot"></i><span>66 Bronkyl Street Newyork, USA </span></li>
+            </ul>
+          </div>
+          <div class="explore">
+            <h2>Explore</h2>
+            <ul>
+              <div class="lists-1">
+                <li>Lastest News</li>
+                <li>Terms of Use</li>
+                <li>Privacy and Policy</li>
+                <li>Contact</li>
+                <li>Help</li>
+              </div>
+              <div class="lists-2">
+                <li>About</li>
+                <li>Support</li>
+                <li>Meet our Team</li>
+                <li>Case Studies</li>
+              </div>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+            <div class="subcribe">
+              <p>Subcribe for Lastest articles and resources</p>
+              <div class="input-search">
+                <input type="search">
+                <p>Register</p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </section>
+        <section id="footer2">
+          <hr>
+          <p><i class="fa-solid fa-copyright"></i>copyright 2024 by company</p>
+        </section>
+        </footer>
+    
     </div>
   </div>
   

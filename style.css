@@ -22,9 +22,9 @@
   
   header{
     width: 100%;
-    height: 700px;
+    height: auto;
     background: #442222;
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
     color: #fff;
   }
   
@@ -35,30 +35,16 @@
   header nav{
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   
   header nav ul {
     margin: 0 auto 0 10%;
   }
   #logo-img{
-    width: 90px;
+    width: 80px;
     height: auto;
-    /* padding: 10px; */
-    /* background: #867bffb2; */
     border-radius: 10px;
-  }
-  @media screen and (max-width: 800px){
-    div{
-      overflow: hidden;
-    }
-    header nav ul{
-      display: none;
-    }
-     header nav .logo{
-       margin-right: auto;
-     }
   }
   .search img:hover  {
     cursor: pointer;
@@ -69,13 +55,23 @@
   header nav ul li{
     list-style: none;
     display: inline-block;
-    margin-inline: 5px;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  header nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', serif;
+  }
+  header nav ul li a:hover{
+    color: rgba(255,255,255, .7);
+    transition: var(--tran);
   }
   header .welcome-page{
     margin-left: 8%;
   }
+ 
   header .welcome-page, button#discover,
   #section-one h2{
     font-weight: bolder;
@@ -117,6 +113,7 @@
     color: #fff;
   }
   
+
   /*======= Wealth Management Styling =======*/
   
   #section-one{
@@ -146,11 +143,7 @@
     height: auto;
     margin: 50px auto;
   }
-  @media screen and (max-width: 800px){
-    #section-one #section1-divs{
-      overflow: hidden;
-    }
-  }
+
   #section-one .section-wealth{
     display: flex;
     justify-content: space-around;
@@ -229,6 +222,7 @@
     background: #fff;
     border-radius: 50%;
   }
+
   
   /*====  Section 2- Leading Market Styling  ====*/
   
@@ -302,20 +296,20 @@
   }
   #need-help{
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
     margin-top: 25px;
   }
   #help-icon{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    background: #6666d9;
-    color: #fff;
+    width: 50px;
+    height: 50px;
     text-align: center;
   }
+  #need-help i {
+    font-size: 30px;
+  }
   #help-call{
-    font-size: 10px;
+    font-size: 12px;
   }
   
   
@@ -468,13 +462,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8em;
   }
+
+
   /*=========== section-four =============*/
   
   .section-four{
     width: 100%;
     height: auto;
     background: rgb(39,46,80);
-    padding: 50px;
+    padding: 50px 30px;
   }
   
   .section-four h2{
@@ -502,6 +498,7 @@
     width: 100%;
     height: auto;
     padding: 20px;
+    font-family: 'Roboto';
   }
   #section-five .cont{
     width: 100%;
@@ -522,7 +519,7 @@
   }
   #section-five  .cont .quest1:hover{
     cursor: pointer;
-    background: rgba(0,0,0, .3);
+    background: #4a4adc;
     color: #fff;
   } 
   #section-five  .cont .quest1 h2{
@@ -550,7 +547,7 @@
   
   #section-five  .cont .quest1 p{
     width: 70%;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 19px;
   }
   /* use this class when writing js code*/
@@ -585,9 +582,9 @@
   #section-five .exp p{
     font-size: 12px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
+
   /*======= section Six ========*/
   
   #section-six{
@@ -599,7 +596,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
   #section-six #talking-about, #section-six .box{
     width: 100%;
@@ -611,7 +608,7 @@
     font-family: Tahoma;
   }
   #section-six #talking-about p{
-    font-size: 10px;
+    font-size: 12px;
     word-spacing: 2px;
     font-family: Verdana;
     color: rgb(112, 110, 110);
@@ -622,7 +619,7 @@
      background: #fff;
      padding: 40px 20px;
      border-radius: 10px;
-     font-size: 10px;
+     font-size: 12px;
      box-shadow: 0px 0px 20px rgba(0,0,0, .2);
      font-family: Verdana;
      line-height: 1.5em;
@@ -652,6 +649,9 @@
     margin: 30px 0;
   }
   
+
+
+
   /*======= section seven ========*/
   
   .section-seven{
@@ -690,7 +690,8 @@
     color: #b7ca4b;
   }
   
-  
+
+
   /*======= section eight ========*/
   
   .section-eight{
@@ -699,17 +700,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 120px;
-    margin-top: 50px;
+    padding: 80px 100px;
   }
   
-  .section-eight .text-cont, .text-cont2{
-    width: 45%;
-    height: auto;
+   .section-eight .text-cont, .text-cont2{
+    padding: 10px;
+    margin-right: 20px;
+  }
+  #mark-out-1{
+    margin-bottom: 100px;
   }
   .section-eight .text-cont .rate-sec{
     display: flex;
-    gap: 20px;
+    gap: 25px;
   }
   .section-eight .text-cont .rate-sec .mark-out{
     width: 100px;
@@ -724,32 +727,342 @@
   .mark-out-text h2{
     font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
   }
-  .mark-out-text p{
-    font-size: 12px;
+  .mark-out-text p, .text-cont2{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
   .text-cont2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 15px;
-    margin: 0px auto 0;
+    margin-top: 30px;
   }
   .text-cont2 ul{
     list-style: none;
-    margin-top: 50px;
+    margin-top: 100px;
+  } 
+
+  @media screen and (max-width: 1000px){
+    .body-container{
+      width: 98%;
+      height: auto;
+    }
+      /*======= Introduction page Styling =======*/
+    header{
+      width: 100%;
+      height: auto;
+    }
+    header nav ul{
+      display: none;
+    }
+    header nav ul.show{
+      position: absolute;
+      top: 20px;
+      right: center;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; */
+    }
+    header nav .logo{
+       margin-right: auto;
+    }
+    #logo-img{
+      width: 50px;
+      height: auto;
+    }
+    header .welcome-page #welcome-intro{
+      width: 45%;
+      height: auto;
+      font-size: 8px;
+    }
+    header .welcome-page #welcome-content{
+      width: 80%;
+      height: auto;
+      font-size: 2rem;
+    }
+    header nav ul li a{
+      font-size: 10px;
+    }
+    button#discover{
+      width: 50%;
+      height: auto;
+      padding: 10px;
+      font-size: 12px;
+    }
+    /* div{
+      overflow: hidden;
+    } */
+    /* #section-one #section1-divs{
+      overflow: hidden;
+    } */
+
+      /*======= Wealth Management Styling =======*/
+
+      #section-one h2{
+        font-size: 1em;
+      }
+      #section-one p{
+        font-size: 10px;
+      }
+      #section-one #section1-divs{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+    
+      #section-one .section-wealth{
+        width: auto;
+        height: 200px;
+        padding: 25px;
+      }
+      #section-one .section-wealth h3, a{
+        font-size: 25px;
+      }
+      div.hr{
+        width: 40%;
+      }
+      #nav-arr{
+        width: 100%;
+        height: auto;
+      }  
+      #nav-arr1, #nav-arr2{
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        font-size: 22px;
+      }
+
+      /*====  Section 2- Leading Market Styling  ====*/
+
+       #section-2 .leading-market #play{
+         width: 50px;
+         height: 50px;
+         padding: 12px 15px;
+         font-size: 1.5em;
+       }
+       #section-2 .leading-market #leading-market-chart{
+         width: 100%;
+         height: auto;
+         gap: 30px;
+         margin-left: 50px;
+       }
+       #section-2 .leading-market #leading-market-chart h3{
+         font-size: 1.5em;
+       } 
+       #section-2 .leading-market #leading-market-chart p{
+        font-size: 12px;
+       }
+       p#leading-market-chart-text{
+        font-size: 12px;
+      }
+      #need-help{
+        gap: 10px;
+      }
+      #need-help i {
+        font-size: 25px;
+      }
+      #help-call p{
+        font-size: 10px;
+      }
+     
+      /*======= section 3 ========*/
+
+      .section-three h2, #section-five #qna{
+        font-size: 1.7em;
+      }
+      #hclient{
+        font-size: 10px;
+      }
+      .section-three #car-containers{
+        flex-direction: column;
+      }
+      .section-three #car-containers .cars{
+        width: 100%;
+        height: 400px;
+      }
+      .section-three #car-containers .cars .icons-car{
+        font-size: 50px;
+      }
+      .section-three #car-containers .cars p{
+        font-size: 8px;
+      }
+      .section-three #car-containers .cars h4{
+        font-size: 1.5em;
+      }
+      /*=========== section-four =============*/
+
+      .section-four{
+        padding: 25px 15px;
+      }
+
+      .section-four h2{
+        width: auto;
+        font-size: 1.5em;
+      }
+        /*======= section Five ========*/
+
+        #section-five .cont{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          padding: 10px;
+        }
+        #section-five  .cont .quest1{
+          width: 100%;
+          height: auto;
+          padding: 15px;
+        }
+        #section-five  .cont .quest1 h2{
+          font-size: 10px;
+        } 
+        #section-five  .cont .quest1 h2::after{
+          right: -10px;
+        }
+        #section-five  .cont .quest1 h2 span{
+          font-size: 14px;
+        }
+        #section-five  .cont .quest1 p{
+          width: 70%;
+          font-size: 12px;
+          padding-left: 18px;
+        }
+        #section-five .lists li{
+          padding: 0 0 5px 15px;
+          font-size: 12px;
+          margin-left: 0px;
+        }
+
+        /*======= section Six ========*/
+        #section-six{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+        }
+        #section-six #talking-about h1{
+          font-size: 2.3em;
+        }
+        #section-six #talking-about p{
+          font-size: 11px;
+        }
+        #section-six .box{
+          width: 100%;
+          height: auto;
+          padding: 40px 20px;
+        }
+        #section-six  #nav-arr1{
+          display: none;
+        }
+        #section-six  #nav-arr2 i{
+          text-align: center;
+          transform: rotate(90deg);
+        }
+
+
+        /*======= section seven ========*/
+        .section-seven{
+          width: 100%;
+          height: 400px;
+          padding: 50px 20px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 5%;
+        }
+
+        .section-seven .boxes h2{
+          font-size: 2.0em;
+        }
+        .section-seven .boxes p{
+          text-align: center;
+          font-size: 10px;
+        }
+        .section-seven hr{
+          height: 150px;
+          width: 2px;
+        }
+        .section-seven h4 i{
+          font-size: 30px;
+        }
+
+          /*======= section eight ========*/
+  
+  .section-eight{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 100px;
   }
   
+   .section-eight .text-cont, .text-cont2{
+    padding: 10px;
+    margin-right: 20px;
+  }
+  #mark-out-1{
+    margin-bottom: 100px;
+  }
+  .section-eight .text-cont .rate-sec{
+    display: flex;
+    gap: 25px;
+  }
+  .section-eight .text-cont .rate-sec .mark-out{
+    width: 100px;
+    height: 50px;
+    background: #6666d9;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .mark-out-text h2{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+  }
+  .mark-out-text p, .text-cont2{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .text-cont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .text-cont2 ul{
+    list-style: none;
+    margin-top: 100px;
+  } 
+
+  }
+
   /*=======  Footer   Styling =======*/
   
-   footer{
+  footer{
     width: 100%;
-    height: 300px;
+    height: auto;
     background: #0e0830;
     color: #fff;
+  }
+
+   #footer1{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -757,7 +1070,20 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     gap: 5%;
   }
-  
+  #footer2{
+    padding: 50px 80px;
+  }
+  #footer2 hr {
+    margin-bottom: 10px;
+  }
+  #footer2 p{
+    font-size: 14px;
+    font-size: verdana;
+  }
+  #footer2 i{
+    margin-right: 5px;
+    text-align: center;
+  }
   footer .more-about{
     display: flex;
     justify-content: space-between;
@@ -780,13 +1106,13 @@
   
   .more-about  p, .explore ul li,
   .newsletter .subcribe p {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bolder;
     color: rgb(255,255,255, .7);
   }
   
   .more-about ul li{
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .more-about ul li span{
       margin-left: 10px;
@@ -814,7 +1140,7 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
   }
   .newsletter .subcribe{
     padding: 30px 20px;
@@ -832,21 +1158,29 @@
   }
   .newsletter input{
     width: 100%;
-    height: 30px;
-    margin: 10px 0 0 0px;
+    height: 40px;
+    margin: 10px 0 0 5px;
+    border-radius: 5px;
+    padding: 10px 80px 10px 20px;
+    font-size: 14px;
   }
   
   .newsletter .input-search p{
     display: inline-block;
     margin: 10px 0 0 -100px;
-    padding: 3px;
+    padding: 5px;
     background: var(--primary-color);
     border-radius: 5px;
-  } /*
-  
-  @media screen and (max-width: 375px){
-    header .welcome-page #welcome-intro{
-      width: 200px;
-      height: auto;
-    }
-  } */
+    font-size: 12px;
+  } 
+  .newsletter .input-search p:hover{
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+  }
+  .newsletter input:focus{
+    outline: 3px solid #472be7;
+    border: none;
+  }
+
+ 

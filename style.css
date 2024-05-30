@@ -708,7 +708,7 @@
     margin-right: 20px;
   }
   #mark-out-1{
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
   .section-eight .text-cont .rate-sec{
     display: flex;
@@ -744,314 +744,10 @@
   }
   .text-cont2 ul{
     list-style: none;
-    margin-top: 100px;
+  
+  margin-top: 100px;
   } 
 
-  @media screen and (max-width: 1000px){
-    .body-container{
-      width: 98%;
-      height: auto;
-    }
-      /*======= Introduction page Styling =======*/
-    header{
-      width: 100%;
-      height: auto;
-    }
-    header nav ul{
-      display: none;
-    }
-    header nav ul.show{
-      position: absolute;
-      top: 20px;
-      right: center;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; */
-    }
-    header nav .logo{
-       margin-right: auto;
-    }
-    #logo-img{
-      width: 50px;
-      height: auto;
-    }
-    header .welcome-page #welcome-intro{
-      width: 45%;
-      height: auto;
-      font-size: 8px;
-    }
-    header .welcome-page #welcome-content{
-      width: 80%;
-      height: auto;
-      font-size: 2rem;
-    }
-    header nav ul li a{
-      font-size: 10px;
-    }
-    button#discover{
-      width: 50%;
-      height: auto;
-      padding: 10px;
-      font-size: 12px;
-    }
-    /* div{
-      overflow: hidden;
-    } */
-    /* #section-one #section1-divs{
-      overflow: hidden;
-    } */
-
-      /*======= Wealth Management Styling =======*/
-
-      #section-one h2{
-        font-size: 1em;
-      }
-      #section-one p{
-        font-size: 10px;
-      }
-      #section-one #section1-divs{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-      }
-    
-      #section-one .section-wealth{
-        width: auto;
-        height: 200px;
-        padding: 25px;
-      }
-      #section-one .section-wealth h3, a{
-        font-size: 25px;
-      }
-      div.hr{
-        width: 40%;
-      }
-      #nav-arr{
-        width: 100%;
-        height: auto;
-      }  
-      #nav-arr1, #nav-arr2{
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-        font-size: 22px;
-      }
-
-      /*====  Section 2- Leading Market Styling  ====*/
-
-       #section-2 .leading-market #play{
-         width: 50px;
-         height: 50px;
-         padding: 12px 15px;
-         font-size: 1.5em;
-       }
-       #section-2 .leading-market #leading-market-chart{
-         width: 100%;
-         height: auto;
-         gap: 30px;
-         margin-left: 50px;
-       }
-       #section-2 .leading-market #leading-market-chart h3{
-         font-size: 1.5em;
-       } 
-       #section-2 .leading-market #leading-market-chart p{
-        font-size: 12px;
-       }
-       p#leading-market-chart-text{
-        font-size: 12px;
-      }
-      #need-help{
-        gap: 10px;
-      }
-      #need-help i {
-        font-size: 25px;
-      }
-      #help-call p{
-        font-size: 10px;
-      }
-     
-      /*======= section 3 ========*/
-
-      .section-three h2, #section-five #qna{
-        font-size: 1.7em;
-      }
-      #hclient{
-        font-size: 10px;
-      }
-      .section-three #car-containers{
-        flex-direction: column;
-      }
-      .section-three #car-containers .cars{
-        width: 100%;
-        height: 400px;
-      }
-      .section-three #car-containers .cars .icons-car{
-        font-size: 50px;
-      }
-      .section-three #car-containers .cars p{
-        font-size: 8px;
-      }
-      .section-three #car-containers .cars h4{
-        font-size: 1.5em;
-      }
-      /*=========== section-four =============*/
-
-      .section-four{
-        padding: 25px 15px;
-      }
-
-      .section-four h2{
-        width: auto;
-        font-size: 1.5em;
-      }
-        /*======= section Five ========*/
-
-        #section-five .cont{
-          width: 100%;
-          height: auto;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-          padding: 10px;
-        }
-        #section-five  .cont .quest1{
-          width: 100%;
-          height: auto;
-          padding: 15px;
-        }
-        #section-five  .cont .quest1 h2{
-          font-size: 10px;
-        } 
-        #section-five  .cont .quest1 h2::after{
-          right: -10px;
-        }
-        #section-five  .cont .quest1 h2 span{
-          font-size: 14px;
-        }
-        #section-five  .cont .quest1 p{
-          width: 70%;
-          font-size: 12px;
-          padding-left: 18px;
-        }
-        #section-five .lists li{
-          padding: 0 0 5px 15px;
-          font-size: 12px;
-          margin-left: 0px;
-        }
-
-        /*======= section Six ========*/
-        #section-six{
-          width: 100%;
-          height: auto;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-direction: column;
-        }
-        #section-six #talking-about h1{
-          font-size: 2.3em;
-        }
-        #section-six #talking-about p{
-          font-size: 11px;
-        }
-        #section-six .box{
-          width: 100%;
-          height: auto;
-          padding: 40px 20px;
-        }
-        #section-six  #nav-arr1{
-          display: none;
-        }
-        #section-six  #nav-arr2 i{
-          text-align: center;
-          transform: rotate(90deg);
-        }
-
-
-        /*======= section seven ========*/
-        .section-seven{
-          width: 100%;
-          height: 400px;
-          padding: 50px 20px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          gap: 5%;
-        }
-
-        .section-seven .boxes h2{
-          font-size: 2.0em;
-        }
-        .section-seven .boxes p{
-          text-align: center;
-          font-size: 10px;
-        }
-        .section-seven hr{
-          height: 150px;
-          width: 2px;
-        }
-        .section-seven h4 i{
-          font-size: 30px;
-        }
-
-          /*======= section eight ========*/
-  
-  .section-eight{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 80px 100px;
-  }
-  
-   .section-eight .text-cont, .text-cont2{
-    padding: 10px;
-    margin-right: 20px;
-  }
-  #mark-out-1{
-    margin-bottom: 100px;
-  }
-  .section-eight .text-cont .rate-sec{
-    display: flex;
-    gap: 25px;
-  }
-  .section-eight .text-cont .rate-sec .mark-out{
-    width: 100px;
-    height: 50px;
-    background: #6666d9;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-  }
-  .mark-out-text h2{
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-  }
-  .mark-out-text p, .text-cont2{
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  }
-  .text-cont2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  .text-cont2 ul{
-    list-style: none;
-    margin-top: 100px;
-  } 
-
-  }
 
   /*=======  Footer   Styling =======*/
   
@@ -1181,6 +877,350 @@
   .newsletter input:focus{
     outline: 3px solid #472be7;
     border: none;
+  }
+
+  
+  @media screen and (max-width: 1000px){
+    .body-container{
+      width: 100%;
+      height: auto;
+    }
+      /*======= Introduction page Styling =======*/
+    header{
+      width: 100%;
+      height: auto;
+    }
+    header nav ul{
+      display: none;
+    }
+    header nav ul.show{
+      position: absolute;
+      top: 20px;
+      right: center;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; */
+    }
+    header nav .logo{
+       margin-right: auto;
+    }
+    #logo-img{
+      width: 50px;
+      height: auto;
+    }
+    header .welcome-page #welcome-intro{
+      width: 45%;
+      height: auto;
+      font-size: 8px;
+    }
+    header .welcome-page #welcome-content{
+      width: 80%;
+      height: auto;
+      font-size: 2rem;
+    }
+    header nav ul li a{
+      font-size: 10px;
+    }
+    button#discover{
+      width: 30%;
+      height: auto;
+      padding: 10px;
+      font-size: 8px;
+    }
+    /* div{
+      overflow: hidden;
+    } */
+    /* #section-one #section1-divs{
+      overflow: hidden;
+    } */
+
+      /*======= Wealth Management Styling =======*/
+
+      #section-one h2{
+        font-size: 1em;
+      }
+      #section-one p{
+        font-size: 10px;
+      }
+      #section-one #section1-divs{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+    
+      #section-one .section-wealth{
+        width: auto;
+        height: 200px;
+        padding: 25px;
+      }
+      #section-one .section-wealth h3, a{
+        font-size: 25px;
+      }
+      div.hr{
+        width: 40%;
+      }
+      #nav-arr{
+        width: 100%;
+        height: auto;
+      }  
+      #nav-arr1, #nav-arr2{
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        font-size: 22px;
+      }
+
+      /*====  Section 2- Leading Market Styling  ====*/
+
+       #section-2 .leading-market #play{
+         width: 50px;
+         height: 50px;
+         padding: 12px 15px;
+         font-size: 1.5em;
+       }
+       #section-2 .leading-market #leading-market-chart{
+         width: 100%;
+         height: auto;
+         gap: 30px;
+         margin-left: 50px;
+       }
+       #section-2 .leading-market #leading-market-chart h3{
+         font-size: 1.5em;
+       } 
+       #section-2 .leading-market #leading-market-chart p{
+        font-size: 12px;
+       }
+       p#leading-market-chart-text{
+        font-size: 12px;
+      }
+      #need-help{
+        gap: 10px;
+      }
+      #need-help i {
+        font-size: 25px;
+      }
+      #help-call p{
+        font-size: 10px;
+      }
+     
+      /*======= section 3 ========*/
+
+      .section-three h2, #section-five #qna{
+        font-size: 1.7em;
+      }
+      #hclient{
+        font-size: 10px;
+      }
+      .section-three #car-containers{
+        flex-direction: column;
+      }
+      .section-three #car-containers .cars{
+        width: 100%;
+        height: 400px;
+      }
+      .section-three #car-containers .cars .icons-car{
+        font-size: 50px;
+      }
+      .section-three #car-containers .cars p{
+        font-size: 8px;
+      }
+      .section-three #car-containers .cars h4{
+        font-size: 1.5em;
+      }
+      /*=========== section-four =============*/
+
+      .section-four{
+        padding: 25px 20px;
+      }
+
+      .section-four h2{
+        width: auto;
+        font-size: 1.5em;
+      }
+        /*======= section Five ========*/
+
+        #section-five .cont{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          padding: 10px;
+        }
+        #section-five  .cont .quest1{
+          width: 100%;
+          height: auto;
+          padding: 15px;
+        }
+        #section-five  .cont .quest1 h2{
+          font-size: 12px;
+        } 
+        #section-five  .cont .quest1 h2::after{
+          right: -10px;
+        }
+        #section-five  .cont .quest1 h2 span{
+          font-size: 14px;
+        }
+        #section-five  .cont .quest1 p{
+          width: 70%;
+          font-size: 12px;
+          padding-left: 18px;
+        }
+        #section-five .lists li{
+          padding: 0 0 5px 15px;
+          font-size: 12px;
+          margin-left: 0px;
+        }
+
+        /*======= section Six ========*/
+        #section-six{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+        }
+        #section-six #talking-about h1{
+          font-size: 2.3em;
+        }
+        #section-six #talking-about p{
+          font-size: 11px;
+        }
+        #section-six .box{
+          width: 100%;
+          height: auto;
+          padding: 40px 20px;
+        }
+        #section-six  #nav-arr1{
+          display: none;
+        }
+        #section-six  #nav-arr2 i{
+          text-align: center;
+          transform: rotate(90deg);
+        }
+
+
+        /*======= section seven ========*/
+        .section-seven{
+          width: 100%;
+          height: 400px;
+          padding: 50px 20px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 5%;
+        }
+
+        .section-seven .boxes h2{
+          font-size: 2.0em;
+        }
+        .section-seven .boxes p{
+          text-align: center;
+          font-size: 10px;
+        }
+        .section-seven hr{
+          height: 150px;
+          width: 2px;
+        }
+        .section-seven h4 i{
+          font-size: 30px;
+        }
+
+          /*======= section eight ========*/
+          .section-eight{
+            flex-direction: column;
+            padding: 0;
+          }
+          .section-eight .text-cont, .text-cont2{
+            padding: 40px 20px;
+          }
+          #mark-out-1{
+            margin-bottom: 30px;
+          }
+          .section-eight .text-cont .rate-sec{
+            display: flex;
+            gap: 10%;
+          }
+          .section-eight .text-cont .rate-sec .mark-out{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            padding: 12px;
+            border-radius: 5px;
+          }
+          .mark-out-text h2{
+            font-size: 17px;
+            margin-bottom: 20px;
+          }
+          .mark-out-text p, .text-cont2{
+            font-size: 12px;
+          }
+          .text-cont2{
+            margin: 0 0 0 10px;
+            padding: 5px;
+          }
+          .text-cont2 ul{
+            margin-top: 20px;
+          } 
+
+          /*=======  Footer   Styling =======*/
+          #footer1{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 50px 20px;
+            gap: 10px;
+          }
+          #footer2{
+            padding: 20px;
+          }
+          #footer2 hr {
+            margin-bottom: 10px;
+          }
+          #footer2 p{
+            font-size: 10px;
+          }
+          #footer2 i{
+            margin-right: 2px;
+          }
+          footer .more-about{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+          }
+          .explore {
+            margin-top: 50px;
+          }
+          .explore ul{
+            display: flex;
+            gap: 100px;
+          }
+          .explore ul li{
+            margin-bottom: 15px;
+            font-size: 12px;
+          }
+          .newsletter{
+            width: 100%;
+            height: auto;
+            gap: 70px;
+          }
+          .newsletter .subcribe{
+            padding: 40px 20px;
+          }
+          .newsletter .subcribe p {
+            font-size: 11px;
+          }
+          .newsletter .input-search p{
+            padding: 8px;
+            font-size: 10px;
+          }
   }
 
  

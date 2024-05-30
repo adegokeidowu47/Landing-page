@@ -1,1 +1,1 @@
-##My FIrst Statics Landing Page With HTML, CSS, and JS
+My First Statics Landing Page With HTML, CSS, and JS

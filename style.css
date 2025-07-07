@@ -1,327 +1,369 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  :root{
-      /*  ===== colors ===== */
-      --body-color:#E4E9F7;
-      --sidebar-color:#fff;
-      --primary-color: #695cfe;
-      --primary-color-light: #F6F5FF;
-      --toggle-color: #ddd;
-      --text-color: #707070;
-  
-      /* ===== Transition ===== */
-  
-      --tran: all 0.5s ease;
-  }
-  
-  /*======= Introduction page Styling =======*/
-  
-  header{
-    width: 100%;
-    height: auto;
-    background: #442222;
-    padding: 15px 15px 30px 15px;
-    color: #fff;
-  }
-  
-  header, button#discover{
-    text-transform: uppercase;
-  }
-  
-  header nav{
-    display: flex;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-  
-  header nav ul {
-    margin: 0 auto 0 10%;
-  }
-  #logo-img{
-    width: 80px;
-    height: auto;
-    border-radius: 10px;
-  }
-  .search img:hover  {
-    cursor: pointer;
-    padding: 5px;
-    background: #fff;
-    border-radius: 50%;
-  }
-  header nav ul li{
-    list-style: none;
-    display: inline-block;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
-  header nav ul li a{
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    font-family: 'Roboto', serif;
-  }
-  header nav ul li a:hover{
-    color: rgba(255,255,255, .7);
-    transition: var(--tran);
-  }
-  header .welcome-page{
-    margin-left: 8%;
-  }
- 
-  header .welcome-page, button#discover,
-  #section-one h2{
-    font-weight: bolder;
-    font-family: 'Times' New Roman;
-  }
-  header .welcome-page #welcome-intro{
-    width: 300px;
-    height: auto;
-    padding: 10px;
-    font-size: 12px;
-    background: #0b0f46;
-    margin-bottom: 10px;
-  }
-  
-  header .welcome-page #welcome-intro,
-  button#discover, #section-one h2{
-    text-align: center;
-  }
-  header .welcome-page #welcome-content{
-    width: 40%;
-    height: auto;
-    font-size: 4rem;
-    margin-bottom: 15px;
-  }
-  button#discover{
-    width: 250px;
-    height: auto;
-    padding: 15px;
-    font-size: 20px;
-    background:#6666d9;
-    border-radius: 5px;
-    color: #fff;
-    border: none;
-    outline: none;
-  }
-  button#discover:hover{
-    cursor: pointer;
-    background: #0b0f46;
-    color: #fff;
-  }
-  
+}
 
-  /*======= Wealth Management Styling =======*/
-  
-  #section-one{
-    width: 100%;
-    height: auto;
-    background: #0e0830;
-    padding: 15px;
-    color: #fff;
-  }
-  
-  #section-one h2{
-    margin-top: 20px;
-    font-size: 2.5em;
-    text-transform: uppercase;
-  }
-  #section-one p{
-    text-align: center;
-    font-family: Monospace;
-    font-size: 16px;
-  }
-  #section-one #section1-divs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    width: 100%;
-    height: auto;
-    margin: 50px auto;
-  }
+:root {
+  /*  ===== colors ===== */
+  --body-color: #E4E9F7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #ddd;
+  --text-color: #707070;
 
-  #section-one .section-wealth{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 25%;
-    height: 200px;
-    background: #000;
-    box-shadow: 3px 3px 5px rgba(255,255,255, .3);
-  }
-  #section-one .section-wealth h3, a{
-    font-family: sans-serif;
-    font-weight: 500;
-    margin: 0px 0 0 10px;
-    padding: 15px;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  #section-one .section-wealth a{
-    font-size: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-  }
-  #section-one .section-wealth a:hover{
-    text-decoration: underline;
-  }
-  
-  div.hr{
-    width: 30%;
-    margin: 50px auto;
-    height: 2px;
-    background: #fff;
-  }
-  #hr1{
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  
-  #nav-arr{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: auto;
-    margin: 30px auto;
-  }
-  
-  #nav-arr1, #nav-arr2{
-    width: 80px;
-    height: 80px;
-    padding: 25px;
-    background: #6666d9;
-    font-size: 28px;
-    text-align: center;
-    font-weight: bolder;
-    border-radius: 50%;
-  }
-  #nav-arr1:hover, 
-  #nav-arr2:hover{
-    cursor: pointer;
-    background: #0b0f46;
-  }
-  
-  .shape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #6666d9;
-  }
-  #inside_shape{
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border-radius: 50%;
-  }
+  /* ===== Transition ===== */
 
-  
-  /*====  Section 2- Leading Market Styling  ====*/
-  
-  #section-2{
-    max-width: 100%;
-    height: auto;
-    padding: 20px 10% 20px 10%;
-  }
-  
-  #section-2 .leading-market{
-    display: flex;
-    justify-content: space-between;
-    font-family: Trebuchet MS;
-    margin: 80px 0 20px 0;
-  }
-   #section-2 .leading-market #play{
-     width: 80px;
-     height: 80px;
-     border-radius: 5px;
-     padding: 15px;
-     color: #fff;
-     background: #6666d9;
-     text-align: center;
-     font-size: 3em;
-     margin-right: auto;
-   }
-   #section-2 .leading-market #leading-market-chart{
-     width: 350px;
-     height: 500px;
-     display: flex;
-     justify-content: space-around;
-     flex-direction: column;
-   }
-   #section-2 .leading-market #leading-market-chart h3{
-     font-size: 3em;
-     font-weight: bolder;
-     text-transform: uppercase;
-   } 
-   p#leading-market-chart-text{
-    color: #4242cf;
-  }
-  #A-progress-consulting,
-  #B-progress-consulting,
-  #A-progress-advice,
-  #B-progress-advice{
-    height: 10px;
-    border-radius: 20px;
-  }
-  #A-progress-consulting,#A-progress-advice{
-    width: 100%;
-    background: #ddd;
-  }
-  #A-progress-consulting #B-progress-consulting{
-    width: 80%;
-    background: #6666d9;
-  }
-  #B-progress-advice{
-    width: 68%;
-    background: #6666d9;
-  }
-  
-  #progress-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Monospace;
-    font-weight: 200;
-    margin: 5px 10px 0 5px;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  #need-help{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 25px;
-  }
-  #help-icon{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-  }
-  #need-help i {
-    font-size: 30px;
-  }
-  #help-call{
-    font-size: 12px;
-  }
-  
-  
-  /*=======  Professional Advice  Styling =======*/
-  
-  /* .advice{
+  --tran: all 0.5s ease;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*======= Introduction page Styling =======*/
+
+header {
+  width: 100%;
+  height: auto;
+  background: #442222;
+  padding: 15px 15px 30px 15px;
+  color: #fff;
+}
+
+header,
+button#discover {
+  text-transform: uppercase;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+header nav ul {
+  margin: 0 auto 0 10%;
+}
+
+#logo-img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.search img:hover {
+  cursor: pointer;
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto', serif;
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, .7);
+  transition: var(--tran);
+}
+
+header .welcome-page {
+  margin-left: 8%;
+}
+
+header .welcome-page,
+button#discover,
+#section-one h2 {
+  font-weight: bolder;
+  font-family: 'Times' New Roman;
+}
+
+header .welcome-page #welcome-intro {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  font-size: 12px;
+  background: #0b0f46;
+  margin-bottom: 10px;
+}
+
+header .welcome-page #welcome-intro,
+button#discover,
+#section-one h2 {
+  text-align: center;
+}
+
+header .welcome-page #welcome-content {
+  width: 40%;
+  height: auto;
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+button#discover {
+  width: 250px;
+  height: auto;
+  padding: 15px;
+  font-size: 20px;
+  background: #6666d9;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+button#discover:hover {
+  cursor: pointer;
+  background: #0b0f46;
+  color: #fff;
+}
+
+
+/*======= Wealth Management Styling =======*/
+
+#section-one {
+  width: 100%;
+  height: auto;
+  background: #0e0830;
+  padding: 15px;
+  color: #fff;
+}
+
+#section-one h2 {
+  margin-top: 20px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+#section-one p {
+  text-align: center;
+  font-family: Monospace;
+  font-size: 16px;
+}
+
+#section-one #section1-divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+#section-one .section-wealth {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  height: 200px;
+  background: #000;
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, .3);
+}
+
+#section-one .section-wealth h3,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0px 0 0 10px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#section-one .section-wealth a {
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+#section-one .section-wealth a:hover {
+  text-decoration: underline;
+}
+
+div.hr {
+  width: 30%;
+  margin: 50px auto;
+  height: 2px;
+  background: #fff;
+}
+
+#hr1 {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#nav-arr {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 30px auto;
+}
+
+#nav-arr1,
+#nav-arr2 {
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  background: #6666d9;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+#nav-arr1:hover,
+#nav-arr2:hover {
+  cursor: pointer;
+  background: #0b0f46;
+}
+
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #6666d9;
+}
+
+#inside_shape {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+
+/*====  Section 2- Leading Market Styling  ====*/
+
+#section-2 {
+  max-width: 100%;
+  height: auto;
+  padding: 20px 10% 20px 10%;
+}
+
+#section-2 .leading-market {
+  display: flex;
+  justify-content: space-between;
+  font-family: Trebuchet MS;
+  margin: 80px 0 20px 0;
+}
+
+#section-2 .leading-market #play {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+  background: #6666d9;
+  text-align: center;
+  font-size: 3em;
+  margin-right: auto;
+}
+
+#section-2 .leading-market #leading-market-chart {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#section-2 .leading-market #leading-market-chart h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+p#leading-market-chart-text {
+  color: #4242cf;
+}
+
+#A-progress-consulting,
+#B-progress-consulting,
+#A-progress-advice,
+#B-progress-advice {
+  height: 10px;
+  border-radius: 20px;
+}
+
+#A-progress-consulting,
+#A-progress-advice {
+  width: 100%;
+  background: #ddd;
+}
+
+#A-progress-consulting #B-progress-consulting {
+  width: 80%;
+  background: #6666d9;
+}
+
+#B-progress-advice {
+  width: 68%;
+  background: #6666d9;
+}
+
+#progress-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Monospace;
+  font-weight: 200;
+  margin: 5px 10px 0 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#need-help {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+#help-icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#need-help i {
+  font-size: 30px;
+}
+
+#help-call {
+  font-size: 12px;
+}
+
+
+/*=======  Professional Advice  Styling =======*/
+
+/* .advice{
     width: 100%;
     height: 700px;
     background: #000;
     color: #fff;
   } */
-  /* .advice-container{
+/* .advice-container{
     width: 90%;
     height: 130px;
     display: flex;
@@ -351,7 +393,7 @@
     color: #000;
   }
    */
-  /* .advice-01{
+/* .advice-01{
     width: 50px;
     height: 50px;
     background: #6666d9;
@@ -371,7 +413,7 @@
   .advice1-text p{
     font-size: 10px;
   } */
-  /* .advice1, .advice2{
+/* .advice1, .advice2{
     width: 100%;
     height: 250px;
     padding: 50px;
@@ -387,8 +429,8 @@
     padding: 10px;
     border-radius: 5px;
   } */
-  
-  /* @media screen and (max-width: 1000px){
+
+/* @media screen and (max-width: 1000px){
     .body-container{
       display: none;
       justify-content: center;
@@ -398,829 +440,956 @@
       height: 100vh;
      }
   } */
-  
-  /*======= section 3 ========*/
-  
-  .section-three{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    background: rgb(228, 230, 233);
-  }
-  .section-three h2, #hclient, 
-   #section-five #qna{
-    text-align: center;
-  }
-  .section-three h2, #section-five #qna{
-    font-family: Tahoma;
-    font-weight: bolder;
-    font-size: 3em;
-    text-transform: uppercase;
-  }
-  #hclient{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: rgb(112, 110, 110);
-  }
-  .section-three #car-containers{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5% auto 5px;
-  }
-  .section-three #car-containers .cars{
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    flex-direction: column;
-    width: 30%;
-    height: 400px;
-    background: rgb(168, 148, 148);
-    padding: 20px;
-    text-transform: uppercase;
-    font-family:'Tahoma';
-    font-weight: bolder;
-    color: white;
-    gap: 10px;
-    margin-top: 30px;
-    border-radius: 6px;
-  }
-  .section-three #car-containers .cars .icons-car{
-    background: transparent;
-    font-size: 60px;
-    font-family:cursive;
-    margin-left: 5px;
-  }
-  .section-three #car-containers .cars p{
-    font-size: 10px;
-  }
-  .section-three #car-containers .cars h4{
-    width: 20%;
-    height: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.8em;
-  }
+
+/*======= section 3 ========*/
+
+.section-three {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: rgb(228, 230, 233);
+}
+
+.section-three h2,
+#hclient,
+#section-five #qna {
+  text-align: center;
+}
+
+.section-three h2,
+#section-five #qna {
+  font-family: Tahoma;
+  font-weight: bolder;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+#hclient {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: rgb(112, 110, 110);
+}
+
+.section-three #car-containers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% auto 5px;
+}
+
+.section-three #car-containers .cars {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  width: 30%;
+  height: 400px;
+  background: rgb(168, 148, 148);
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: 'Tahoma';
+  font-weight: bolder;
+  color: white;
+  gap: 10px;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+.section-three #car-containers .cars .icons-car {
+  background: transparent;
+  font-size: 60px;
+  font-family: cursive;
+  margin-left: 5px;
+}
+
+.section-three #car-containers .cars p {
+  font-size: 10px;
+}
+
+.section-three #car-containers .cars h4 {
+  width: 20%;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8em;
+}
 
 
-  /*=========== section-four =============*/
-  
-  .section-four{
-    width: 100%;
-    height: auto;
-    background: rgb(39,46,80);
-    padding: 50px 30px;
-  }
-  
-  .section-four h2{
-    text-align: center;
-    text-transform: uppercase;
-    width: 55%;
-    height: auto;
-    margin: 10px auto;
-    font-family: tahoma;
-    font-weight: bolder;
-    font-size: 2em;
-    color: #fff;
-  }
-  .section-four #discover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:  50px auto 0;
-  }
-  
-  
-  /*======= section Five ========*/
-  
-  #section-five{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    font-family: 'Roboto';
-  }
-  #section-five .cont{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 30px;
-    margin-top: 70px;
-    padding: 30px;
-  }
-  #section-five  .cont .quest1{
-    width: 70%;
-    height: auto;
-    background: #ddd;
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-  #section-five  .cont .quest1:hover{
-    cursor: pointer;
-    background: #4a4adc;
-    color: #fff;
-  } 
-  #section-five  .cont .quest1 h2{
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 10px;
-    position: relative;
-  } 
-  #section-five  .cont .quest1 h2::after{
-    content: '+';
-    font-size: 16px;
-    position: absolute;
-    right: -5px;
-  }
-  #section-five  .cont .questans.active h2::after{
-    content: '-';
-    font-size: 25px;
-  }
-  #section-five  .cont .quest1 h2 span{
-    color: #101099;
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  
-  
-  #section-five  .cont .quest1 p{
-    width: 70%;
-    font-size: 12px;
-    padding-left: 19px;
-  }
-  /* use this class when writing js code*/
-  #section-five  .cont .quest1 .answer{
-    overflow: hidden;
-    height: 0px;
-  }
-  #section-five  .cont .questans.active .answer{
-    width: 100%;
-    height: auto;
-  }
-  #section-five .lists li{
-    /*using url for the mark link*/
-    list-style: '✅';
-    padding: 0 0 5px 5px;
-    font-size: 14px;
-    margin-left: -150px;
-  }
-  
-  #section-five .exp{
-    height: auto;
-    background: #4a4adc;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #section-five .exp h2{
-    font-size: 3em;
-    text-align: center;
-  }
-  #section-five .exp p{
-    font-size: 12px;
-    text-align: center;
-  }
+/*=========== section-four =============*/
+
+.section-four {
+  width: 100%;
+  height: auto;
+  background: rgb(39, 46, 80);
+  padding: 50px 30px;
+}
+
+.section-four h2 {
+  text-align: center;
+  text-transform: uppercase;
+  width: 55%;
+  height: auto;
+  margin: 10px auto;
+  font-family: tahoma;
+  font-weight: bolder;
+  font-size: 2em;
+  color: #fff;
+}
+
+.section-four #discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0;
+}
 
 
-  /*======= section Six ========*/
-  
-  #section-six{
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    background: #ddd;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-  #section-six #talking-about, #section-six .box{
-    width: 100%;
-    height: auto;
-  }
-  #section-six #talking-about h1{
-    text-transform: uppercase;
-    font-size: 2.5em;
-    font-family: Tahoma;
-  }
-  #section-six #talking-about p{
-    font-size: 12px;
-    word-spacing: 2px;
-    font-family: Verdana;
-    color: rgb(112, 110, 110);
-  }
-   #section-six .box{
-     width: 85%;
-     height: auto;
-     background: #fff;
-     padding: 40px 20px;
-     border-radius: 10px;
-     font-size: 12px;
-     box-shadow: 0px 0px 20px rgba(0,0,0, .2);
-     font-family: Verdana;
-     line-height: 1.5em;
-   }
-   #section-six .box .author{
-     color: #4a4adc;
-     text-transform: uppercase;
-     margin: 20px 0 0;
-     font-weight: bold;
-   }
-  
-  #section-six  #nav-arr1, #section-six #nav-arr2{
-    background: #fff ;
-    margin: 0;
-  }
-  #section-six #nav-arr1:hover, 
-   #section-six #nav-arr2:hover{
-    background: #0b0f46;
-    color: #ffff;
-  }
-  
-  #section-six  #nav-arr{
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 30px 0;
-  }
-  
+/*======= section Five ========*/
+
+#section-five {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-family: 'Roboto';
+}
+
+#section-five .cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  margin-top: 70px;
+  padding: 30px;
+}
+
+#section-five .cont .quest1 {
+  width: 70%;
+  height: auto;
+  background: #ddd;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+#section-five .cont .quest1:hover {
+  cursor: pointer;
+  background: #4a4adc;
+  color: #fff;
+}
+
+#section-five .cont .quest1 h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#section-five .cont .quest1 h2::after {
+  content: '+';
+  font-size: 16px;
+  position: absolute;
+  right: -5px;
+}
+
+#section-five .cont .questans.active h2::after {
+  content: '-';
+  font-size: 25px;
+}
+
+#section-five .cont .quest1 h2 span {
+  color: #101099;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+
+#section-five .cont .quest1 p {
+  width: 70%;
+  font-size: 12px;
+  padding-left: 19px;
+}
+
+/* use this class when writing js code*/
+#section-five .cont .quest1 .answer {
+  overflow: hidden;
+  height: 0px;
+}
+
+#section-five .cont .questans.active .answer {
+  width: 100%;
+  height: auto;
+}
+
+#section-five .lists li {
+  /*using url for the mark link*/
+  list-style: '✅';
+  padding: 0 0 5px 5px;
+  font-size: 14px;
+  margin-left: -150px;
+}
+
+#section-five .exp {
+  height: auto;
+  background: #4a4adc;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#section-five .exp h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#section-five .exp p {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/*======= section Six ========*/
+
+#section-six {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background: #ddd;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#section-six #talking-about,
+#section-six .box {
+  width: 100%;
+  height: auto;
+}
+
+#section-six #talking-about h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: Tahoma;
+}
+
+#section-six #talking-about p {
+  font-size: 12px;
+  word-spacing: 2px;
+  font-family: Verdana;
+  color: rgb(112, 110, 110);
+}
+
+#section-six .box {
+  width: 85%;
+  height: auto;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+  font-family: Verdana;
+  line-height: 1.5em;
+}
+
+#section-six .box .author {
+  color: #4a4adc;
+  text-transform: uppercase;
+  margin: 20px 0 0;
+  font-weight: bold;
+}
+
+#section-six #nav-arr1,
+#section-six #nav-arr2 {
+  background: #fff;
+  margin: 0;
+}
+
+#section-six #nav-arr1:hover,
+#section-six #nav-arr2:hover {
+  background: #0b0f46;
+  color: #ffff;
+}
+
+#section-six #nav-arr {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px 0;
+}
 
 
 
-  /*======= section seven ========*/
-  
-  .section-seven{
-    width: 100%;
-    height: 400px;
-    padding: 50px;
-    background: #0e0830;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .section-seven .boxes{
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    gap: 8px;
-  }
-  .section-seven .boxes h2{
-    font-size: 2.5em;
-  }
-  .section-seven .boxes p{
-    font-family: serif;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .section-seven hr{
-    height: 200px;
-    width: 2px;
-  }
-  .section-seven h4 i{
-    font-size: 50px;
-    color: #b7ca4b;
-  }
-  
+
+/*======= section seven ========*/
+
+.section-seven {
+  width: 100%;
+  height: 400px;
+  padding: 50px;
+  background: #0e0830;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-seven .boxes {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
+.section-seven .boxes h2 {
+  font-size: 2.5em;
+}
+
+.section-seven .boxes p {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.section-seven hr {
+  height: 200px;
+  width: 2px;
+}
+
+.section-seven h4 i {
+  font-size: 50px;
+  color: #b7ca4b;
+}
 
 
-  /*======= section eight ========*/
-  
-  .section-eight{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 80px 100px;
-  }
-  
-   .section-eight .text-cont, .text-cont2{
-    padding: 10px;
-    margin-right: 20px;
-  }
-  #mark-out-1{
-    margin-bottom: 70px;
-  }
-  .section-eight .text-cont .rate-sec{
-    display: flex;
-    gap: 25px;
-  }
-  .section-eight .text-cont .rate-sec .mark-out{
-    width: 100px;
-    height: 50px;
-    background: #6666d9;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-  }
-  .mark-out-text h2{
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-  }
-  .mark-out-text p, .text-cont2{
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-  }
-  .text-cont2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  .text-cont2 ul{
-    list-style: none;
-  
+/*======= section eight ========*/
+
+.section-eight {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 100px;
+}
+
+.section-eight .text-cont,
+.text-cont2 {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#mark-out-1 {
+  margin-bottom: 70px;
+}
+
+.section-eight .text-cont .rate-sec {
+  display: flex;
+  gap: 25px;
+}
+
+.section-eight .text-cont .rate-sec .mark-out {
+  width: 100px;
+  height: 50px;
+  background: #6666d9;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.mark-out-text h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.mark-out-text p,
+.text-cont2 {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.text-cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.text-cont2 ul {
+  list-style: none;
+
   margin-top: 100px;
-  } 
+}
 
 
-  /*=======  Footer   Styling =======*/
-  
-  footer{
+/*=======  Footer   Styling =======*/
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #0e0830;
+  color: #fff;
+}
+
+#footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 5%;
+}
+
+#footer2 {
+  padding: 50px 80px;
+}
+
+#footer2 hr {
+  margin-bottom: 10px;
+}
+
+#footer2 p {
+  font-size: 14px;
+  font-size: verdana;
+}
+
+#footer2 i {
+  margin-right: 5px;
+  text-align: center;
+}
+
+footer .more-about {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  height: 100%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.more-about h2,
+.explore h2,
+.newsletter h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.more-about p,
+.explore ul li,
+.newsletter .subcribe p {
+  font-size: 12px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255, .7);
+}
+
+.more-about ul li {
+  margin-top: 5px;
+}
+
+.more-about ul li span {
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.explore ul {
+  display: flex;
+  gap: 30px;
+}
+
+.explore ul li {
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+
+.newsletter {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.newsletter .subcribe {
+  padding: 30px 20px;
+  background: #000;
+  border-radius: 10px;
+}
+
+.newsletter .subcribe p {
+  font-size: 12px;
+}
+
+.newsletter .input-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 0 5px;
+  border-radius: 5px;
+  padding: 10px 80px 10px 20px;
+  font-size: 14px;
+}
+
+.newsletter .input-search p {
+  display: inline-block;
+  margin: 10px 0 0 -100px;
+  padding: 5px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.newsletter .input-search p:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.newsletter input:focus {
+  outline: 3px solid #472be7;
+  border: none;
+}
+
+
+@media screen and (max-width: 850px) {
+  .body-container {
     width: 100%;
     height: auto;
-    background: #0e0830;
-    color: #fff;
+    font-size: 90%;
   }
 
-   #footer1{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 5%;
-  }
-  #footer2{
-    padding: 50px 80px;
-  }
-  #footer2 hr {
-    margin-bottom: 10px;
-  }
-  #footer2 p{
-    font-size: 14px;
-    font-size: verdana;
-  }
-  #footer2 i{
-    margin-right: 5px;
-    text-align: center;
-  }
-  footer .more-about{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 20px;
-    width: 30%;
-    height: 100%;
-  }
-  footer ul{
-    list-style: none;
-  }
-  
-  .more-about h2, 
-  .explore h2, 
-  .newsletter h2{
-     font-size: 12px;
-     text-transform: uppercase;
-     font-weight: bolder;
-   }
-  
-  .more-about  p, .explore ul li,
-  .newsletter .subcribe p {
-    font-size: 12px;
-    font-weight: bolder;
-    color: rgb(255,255,255, .7);
-  }
-  
-  .more-about ul li{
-    margin-top: 5px;
-  }
-  .more-about ul li span{
-      margin-left: 10px;
-      font-size: 10px;
-      font-weight: bolder;
-  }
-  .explore {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  
-  .explore ul{
-    display: flex;
-    gap: 30px;
-  }
-  
-  .explore ul li{
-    margin-bottom: 15px;
-    font-size: 10px;
-  }  
-  
-  .newsletter{
-    width: 400px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-  }
-  .newsletter .subcribe{
-    padding: 30px 20px;
-    background: #000;
-    border-radius: 10px;
-  }
-  .newsletter .subcribe p {
-    font-size: 12px;
-  }
-  
-  .newsletter .input-search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .newsletter input{
+  /*======= Introduction page Styling =======*/
+  header {
     width: 100%;
-    height: 40px;
-    margin: 10px 0 0 5px;
-    border-radius: 5px;
-    padding: 10px 80px 10px 20px;
-    font-size: 14px;
-  }
-  
-  .newsletter .input-search p{
-    display: inline-block;
-    margin: 10px 0 0 -100px;
-    padding: 5px;
-    background: var(--primary-color);
-    border-radius: 5px;
-    font-size: 12px;
-  } 
-  .newsletter .input-search p:hover{
-    cursor: pointer;
-    background: #000;
-    color: #fff;
-  }
-  .newsletter input:focus{
-    outline: 3px solid #472be7;
-    border: none;
+    height: auto;
   }
 
-  
-  @media screen and (max-width: 1000px){
-    .body-container{
-      width: 100%;
-      height: auto;
-    }
-      /*======= Introduction page Styling =======*/
-    header{
-      width: 100%;
-      height: auto;
-    }
-    header nav ul{
-      display: none;
-    }
-    header nav ul.show{
-      position: absolute;
-      top: 20px;
-      right: center;
-      /* display: flex;
+  header nav ul {
+    display: none;
+  }
+
+  header nav ul.show {
+    position: absolute;
+    top: 20px;
+    right: center;
+    /* display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center; */
-    }
-    header nav .logo{
-       margin-right: auto;
-    }
-    #logo-img{
-      width: 50px;
-      height: auto;
-    }
-    header .welcome-page #welcome-intro{
-      width: 45%;
-      height: auto;
-      font-size: 8px;
-    }
-    header .welcome-page #welcome-content{
-      width: 80%;
-      height: auto;
-      font-size: 2rem;
-    }
-    header nav ul li a{
-      font-size: 10px;
-    }
-    button#discover{
-      width: 30%;
-      height: auto;
-      padding: 10px;
-      font-size: 8px;
-    }
-    /* div{
-      overflow: hidden;
-    } */
-    /* #section-one #section1-divs{
-      overflow: hidden;
-    } */
-
-      /*======= Wealth Management Styling =======*/
-
-      #section-one h2{
-        font-size: 1em;
-      }
-      #section-one p{
-        font-size: 10px;
-      }
-      #section-one #section1-divs{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-      }
-    
-      #section-one .section-wealth{
-        width: auto;
-        height: 200px;
-        padding: 25px;
-      }
-      #section-one .section-wealth h3, a{
-        font-size: 25px;
-      }
-      div.hr{
-        width: 40%;
-      }
-      #nav-arr{
-        width: 100%;
-        height: auto;
-      }  
-      #nav-arr1, #nav-arr2{
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-        font-size: 22px;
-      }
-
-      /*====  Section 2- Leading Market Styling  ====*/
-
-       #section-2 .leading-market #play{
-         width: 50px;
-         height: 50px;
-         padding: 12px 15px;
-         font-size: 1.5em;
-       }
-       #section-2 .leading-market #leading-market-chart{
-         width: 100%;
-         height: auto;
-         gap: 30px;
-         margin-left: 50px;
-       }
-       #section-2 .leading-market #leading-market-chart h3{
-         font-size: 1.5em;
-       } 
-       #section-2 .leading-market #leading-market-chart p{
-        font-size: 12px;
-       }
-       p#leading-market-chart-text{
-        font-size: 12px;
-      }
-      #need-help{
-        gap: 10px;
-      }
-      #need-help i {
-        font-size: 25px;
-      }
-      #help-call p{
-        font-size: 10px;
-      }
-     
-      /*======= section 3 ========*/
-
-      .section-three h2, #section-five #qna{
-        font-size: 1.7em;
-      }
-      #hclient{
-        font-size: 10px;
-      }
-      .section-three #car-containers{
-        flex-direction: column;
-      }
-      .section-three #car-containers .cars{
-        width: 100%;
-        height: 400px;
-      }
-      .section-three #car-containers .cars .icons-car{
-        font-size: 50px;
-      }
-      .section-three #car-containers .cars p{
-        font-size: 8px;
-      }
-      .section-three #car-containers .cars h4{
-        font-size: 1.5em;
-      }
-      /*=========== section-four =============*/
-
-      .section-four{
-        padding: 25px 20px;
-      }
-
-      .section-four h2{
-        width: auto;
-        font-size: 1.5em;
-      }
-        /*======= section Five ========*/
-
-        #section-five .cont{
-          width: 100%;
-          height: auto;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-          padding: 10px;
-        }
-        #section-five  .cont .quest1{
-          width: 100%;
-          height: auto;
-          padding: 15px;
-        }
-        #section-five  .cont .quest1 h2{
-          font-size: 12px;
-        } 
-        #section-five  .cont .quest1 h2::after{
-          right: -10px;
-        }
-        #section-five  .cont .quest1 h2 span{
-          font-size: 14px;
-        }
-        #section-five  .cont .quest1 p{
-          width: 70%;
-          font-size: 12px;
-          padding-left: 18px;
-        }
-        #section-five .lists li{
-          padding: 0 0 5px 15px;
-          font-size: 12px;
-          margin-left: 0px;
-        }
-
-        /*======= section Six ========*/
-        #section-six{
-          width: 100%;
-          height: auto;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-direction: column;
-        }
-        #section-six #talking-about h1{
-          font-size: 2.3em;
-        }
-        #section-six #talking-about p{
-          font-size: 11px;
-        }
-        #section-six .box{
-          width: 100%;
-          height: auto;
-          padding: 40px 20px;
-        }
-        #section-six  #nav-arr1{
-          display: none;
-        }
-        #section-six  #nav-arr2 i{
-          text-align: center;
-          transform: rotate(90deg);
-        }
-
-
-        /*======= section seven ========*/
-        .section-seven{
-          width: 100%;
-          height: 400px;
-          padding: 50px 20px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          gap: 5%;
-        }
-
-        .section-seven .boxes h2{
-          font-size: 2.0em;
-        }
-        .section-seven .boxes p{
-          text-align: center;
-          font-size: 10px;
-        }
-        .section-seven hr{
-          height: 150px;
-          width: 2px;
-        }
-        .section-seven h4 i{
-          font-size: 30px;
-        }
-
-          /*======= section eight ========*/
-          .section-eight{
-            flex-direction: column;
-            padding: 0;
-          }
-          .section-eight .text-cont, .text-cont2{
-            padding: 40px 20px;
-          }
-          #mark-out-1{
-            margin-bottom: 30px;
-          }
-          .section-eight .text-cont .rate-sec{
-            display: flex;
-            gap: 10%;
-          }
-          .section-eight .text-cont .rate-sec .mark-out{
-            width: 200px;
-            height: 50px;
-            font-size: 20px;
-            padding: 12px;
-            border-radius: 5px;
-          }
-          .mark-out-text h2{
-            font-size: 17px;
-            margin-bottom: 20px;
-          }
-          .mark-out-text p, .text-cont2{
-            font-size: 12px;
-          }
-          .text-cont2{
-            margin: 0 0 0 10px;
-            padding: 5px;
-          }
-          .text-cont2 ul{
-            margin-top: 20px;
-          } 
-
-          /*=======  Footer   Styling =======*/
-          #footer1{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 50px 20px;
-            gap: 10px;
-          }
-          #footer2{
-            padding: 20px;
-          }
-          #footer2 hr {
-            margin-bottom: 10px;
-          }
-          #footer2 p{
-            font-size: 10px;
-          }
-          #footer2 i{
-            margin-right: 2px;
-          }
-          footer .more-about{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-            height: 100%;
-          }
-          .explore {
-            margin-top: 50px;
-          }
-          .explore ul{
-            display: flex;
-            gap: 100px;
-          }
-          .explore ul li{
-            margin-bottom: 15px;
-            font-size: 12px;
-          }
-          .newsletter{
-            width: 100%;
-            height: auto;
-            gap: 70px;
-          }
-          .newsletter .subcribe{
-            padding: 40px 20px;
-          }
-          .newsletter .subcribe p {
-            font-size: 11px;
-          }
-          .newsletter .input-search p{
-            padding: 8px;
-            font-size: 10px;
-          }
   }
 
- 
+  header nav .logo {
+    margin-right: auto;
+  }
+
+  #logo-img {
+    width: 50px;
+    height: auto;
+  }
+
+  header .welcome-page #welcome-intro {
+    width: 45%;
+    height: auto;
+    font-size: 8px;
+  }
+
+  header .welcome-page #welcome-content {
+    width: 80%;
+    height: auto;
+    font-size: 2rem;
+  }
+
+  header nav ul li a {
+    font-size: 10px;
+  }
+
+  button#discover {
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  /* div{
+      overflow: hidden;
+    } */
+  /* #section-one #section1-divs{
+      overflow: hidden;
+    } */
+
+  /*======= Wealth Management Styling =======*/
+
+  #section-one h2 {
+    font-size: 1em;
+  }
+
+  #section-one p {
+    font-size: 10px;
+  }
+
+  #section-one #section1-divs {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  #section-one .section-wealth {
+    width: auto;
+    height: 200px;
+    padding: 25px;
+  }
+
+  #section-one .section-wealth h3,
+  a {
+    font-size: 25px;
+  }
+
+  div.hr {
+    width: 40%;
+  }
+
+  #nav-arr {
+    width: 100%;
+    height: auto;
+  }
+
+  #nav-arr1,
+  #nav-arr2 {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    font-size: 22px;
+  }
+
+  /*====  Section 2- Leading Market Styling  ====*/
+
+  #section-2 .leading-market #play {
+    width: 50px;
+    height: 50px;
+    padding: 12px 15px;
+    font-size: 1.5em;
+  }
+
+  #section-2 .leading-market #leading-market-chart {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    margin-left: 50px;
+  }
+
+  #section-2 .leading-market #leading-market-chart h3 {
+    font-size: 1.5em;
+  }
+
+  #section-2 .leading-market #leading-market-chart p {
+    font-size: 12px;
+  }
+
+  p#leading-market-chart-text {
+    font-size: 12px;
+  }
+
+  #need-help {
+    gap: 10px;
+  }
+
+  #need-help i {
+    font-size: 25px;
+  }
+
+  #help-call p {
+    font-size: 10px;
+  }
+
+  /*======= section 3 ========*/
+
+  .section-three h2,
+  #section-five #qna {
+    font-size: 1.7em;
+  }
+
+  #hclient {
+    font-size: 10px;
+  }
+
+  .section-three #car-containers {
+    flex-direction: column;
+  }
+
+  .section-three #car-containers .cars {
+    width: 100%;
+    height: 400px;
+  }
+
+  .section-three #car-containers .cars .icons-car {
+    font-size: 50px;
+  }
+
+  .section-three #car-containers .cars p {
+    font-size: 8px;
+  }
+
+  .section-three #car-containers .cars h4 {
+    font-size: 1.5em;
+  }
+
+  /*=========== section-four =============*/
+
+  .section-four {
+    padding: 25px 20px;
+  }
+
+  .section-four h2 {
+    width: auto;
+    font-size: 1.5em;
+  }
+
+  /*======= section Five ========*/
+
+  #section-five .cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #section-five .cont .quest1 {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  #section-five .cont .quest1 h2 {
+    font-size: 12px;
+  }
+
+  #section-five .cont .quest1 h2::after {
+    right: -10px;
+  }
+
+  #section-five .cont .quest1 h2 span {
+    font-size: 14px;
+  }
+
+  #section-five .cont .quest1 p {
+    width: 70%;
+    font-size: 12px;
+    padding-left: 18px;
+  }
+
+  #section-five .lists li {
+    padding: 0 0 5px 15px;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  /*======= section Six ========*/
+  #section-six {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #section-six #talking-about h1 {
+    font-size: 2.3em;
+  }
+
+  #section-six #talking-about p {
+    font-size: 11px;
+  }
+
+  #section-six .box {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #section-six #nav-arr1 {
+    display: none;
+  }
+
+  #section-six #nav-arr2 i {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+
+
+  /*======= section seven ========*/
+  .section-seven {
+    width: 100%;
+    height: 400px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .section-seven .boxes h2 {
+    font-size: 2.0em;
+  }
+
+  .section-seven .boxes p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .section-seven hr {
+    height: 150px;
+    width: 2px;
+  }
+
+  .section-seven h4 i {
+    font-size: 30px;
+  }
+
+  /*======= section eight ========*/
+  .section-eight {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .section-eight .text-cont,
+  .text-cont2 {
+    padding: 40px 20px;
+  }
+
+  #mark-out-1 {
+    margin-bottom: 30px;
+  }
+
+  .section-eight .text-cont .rate-sec {
+    display: flex;
+    gap: 10%;
+  }
+
+  .section-eight .text-cont .rate-sec .mark-out {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+  }
+
+  .mark-out-text h2 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .mark-out-text p,
+  .text-cont2 {
+    font-size: 12px;
+  }
+
+  .text-cont2 {
+    margin: 0 0 0 10px;
+    padding: 5px;
+  }
+
+  .text-cont2 ul {
+    margin-top: 20px;
+  }
+
+  /*=======  Footer   Styling =======*/
+  #footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 10px;
+  }
+
+  #footer2 {
+    padding: 20px;
+  }
+
+  #footer2 hr {
+    margin-bottom: 10px;
+  }
+
+  #footer2 p {
+    font-size: 10px;
+  }
+
+  #footer2 i {
+    margin-right: 2px;
+  }
+
+  footer .more-about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .explore {
+    margin-top: 50px;
+  }
+
+  .explore ul {
+    display: flex;
+    gap: 100px;
+  }
+
+  .explore ul li {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .newsletter {
+    width: 100%;
+    height: auto;
+    gap: 70px;
+  }
+
+  .newsletter .subcribe {
+    padding: 40px 20px;
+  }
+
+  .newsletter .subcribe p {
+    font-size: 11px;
+  }
+
+  .newsletter .input-search p {
+    padding: 8px;
+    font-size: 10px;
+  }
+}

@@ -34,7 +34,7 @@ header {
 }
 
 header,
-button#discover {
+button.discover {
   text-transform: uppercase;
 }
 
@@ -84,7 +84,7 @@ header .welcome-page {
 }
 
 header .welcome-page,
-button#discover,
+button.discover,
 #section-one h2 {
   font-weight: bolder;
   font-family: 'Times' New Roman;
@@ -100,7 +100,7 @@ header .welcome-page #welcome-intro {
 }
 
 header .welcome-page #welcome-intro,
-button#discover,
+button.discover,
 #section-one h2 {
   text-align: center;
 }
@@ -112,7 +112,7 @@ header .welcome-page #welcome-content {
   margin-bottom: 15px;
 }
 
-button#discover {
+button.discover {
   width: 250px;
   height: auto;
   padding: 15px;
@@ -124,7 +124,7 @@ button#discover {
   outline: none;
 }
 
-button#discover:hover {
+button.discover:hover {
   cursor: pointer;
   background: #0b0f46;
   color: #fff;
@@ -531,7 +531,7 @@ p#leading-market-chart-text {
   color: #fff;
 }
 
-.section-four #discover {
+.section-four .discover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -937,22 +937,21 @@ footer ul {
 .newsletter input {
   width: 100%;
   height: 40px;
-  margin: 10px 0 0 5px;
+  margin: 0 0 0 5px;
   border-radius: 5px;
   padding: 10px 80px 10px 20px;
   font-size: 14px;
 }
 
-.newsletter .input-search p {
+.newsletter .input-search label {
   display: inline-block;
-  margin: 10px 0 0 -100px;
-  padding: 5px;
+  padding: 10px;
   background: var(--primary-color);
   border-radius: 5px;
   font-size: 12px;
 }
 
-.newsletter .input-search p:hover {
+.newsletter .input-search label:hover {
   cursor: pointer;
   background: #000;
   color: #fff;
@@ -1015,7 +1014,7 @@ footer ul {
     font-size: 10px;
   }
 
-  button#discover {
+  button.discover {
     width: 30%;
     height: auto;
     padding: 10px;
